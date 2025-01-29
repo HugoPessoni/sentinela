@@ -1,0 +1,30 @@
+sudo apt-get update
+sudo apt-get install python3-venv
+mkdir ~/meu_projeto
+cd ~/meu_projeto
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+
+para rodar o projeto: 
+cd ~/meu_projeto
+source venv/bin/activate
+python meu_script.py
+
+sudo /home/orangepi/seninela/venv/bin/python /home/orangepi/seninela/venv/final.py
+
+funcionou bem. Está rodando bem liso então acho que podemos incrementar um pouco mais. Tenho uma tela modelo GMT130-V1.0 IPS 240*240. 
+Pensei em utilizarmos ela para incrementar o projeto. Dado que tenho a classificação  
+
+
+5. Envio ao Google Sheets
+- Configurar projeto no Google Cloud, pegar credenciais.
+- Implementar script que, a cada detecção/atualização de emoção, envia (Data, Hora, Emoção) ao Sheets.
+6. Ajustes finos e robustez
+- Fazer movimentos mais suaves nos servos.
+- Ajustar limites de ângulo (0 a 180).
+- Testar reações a perdas de rosto (modo sonar).
+- Ajustar se precisar de calibragem no boot.
+7. Validação final
+- Testar em diferentes posições, iluminações, distâncias.
+- Ajustar resolução, velocidade de servo, frequência de detecção conforme necessidade.
